@@ -22,6 +22,7 @@
 #
 
 require 'date'
+require 'sensu-plugin/metric/cli'
 require 'sensuapi.rb'
 
 class Stats < Sensu::Plugin::Metric::CLI::Graphite
