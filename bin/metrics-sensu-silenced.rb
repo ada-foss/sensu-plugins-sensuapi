@@ -73,7 +73,7 @@ class Stats < Sensu::Plugin::Metric::CLI::Graphite
     checks = silenced_events.map{ |e| e['check'] }
 
     checks.uniq.each do |c|
-      dst << [ "checks.#{c}", checks.count c ]
+      dst << [ "checks.#{c}", checks.count(c) ]
     end
   end
 
@@ -81,7 +81,7 @@ class Stats < Sensu::Plugin::Metric::CLI::Graphite
     subscriptions = silenced_events.map{ |e| e['subscription'] }
 
     subscriptions.uniq.each do |s|
-      dst << [ "subscriptions.#{s}", subscriptions.count s ]
+      dst << [ "subscriptions.#{s}", subscriptions.count(s) ]
     end
   end
 
