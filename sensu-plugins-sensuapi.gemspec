@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
   # s.signing_key            = File.expand_path(pvt_key) if $PROGRAM_NAME =~ /gem\z/
   s.summary                = 'Sensu plugin for polling the sensu api in order to do things like send data to graphite'
   s.test_files             = s.files.grep(%r{^(test|spec|features)/})
-  s.version                = SensuPluginsCpuChecks::Version::VER_STRING
+  s.version                = SensuPluginsSensuAPI::Version::VER_STRING
 
   s.add_runtime_dependency 'sensu-plugin', '~> 2.0'
 

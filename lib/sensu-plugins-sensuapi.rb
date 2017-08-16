@@ -1,1 +1,1 @@
-require 'sensu-plugins-sensuapi'
+require 'sensu-plugins-sensuapi/version'
