@@ -54,7 +54,7 @@ class Stats < Sensu::Plugin::Metric::CLI::Graphite
          default: nil
 
   def graphite_prefix
-    (settings['sensuapi']['prefix'] || 'sensu') + '.silenced'
+    'sensu.silenced'
   end
 
   def run
